@@ -1,8 +1,8 @@
 import socket
 
-
+server_ip = input('Enter the ip of server: ')
 cli = socket.socket(socket.AF_INET , socket.SOCK_STREAM)
-cli.connect(("ip of server" , 4225))
+cli.connect((server_ip , 4225))
 
 while True:
     msg = input("message: ")
